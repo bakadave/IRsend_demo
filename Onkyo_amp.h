@@ -1,0 +1,57 @@
+// Onkyo_amp.h
+// NEC encoding, one message is 32 bits long.
+
+#ifndef _ONKYO_AMP_h
+#define _ONKYO_AMP_h
+
+#if defined(ARDUINO) && ARDUINO >= 100
+	#include "arduino.h"
+#else
+	#include "WProgram.h"
+#endif
+
+
+#endif
+
+#define POWER 0x4BB620DF
+#define MUTE 0x4BB6A05F
+#define VOL_UP 0x4BB640BF
+#define VOL_DOWN 0x4BB6C03F
+
+//codes that I can't really use with my amp
+#define SLEEP 0x4BB6BA45
+#define DIMMER 0x4BB6A956
+#define SUR_MODE 0x4BB632CD
+#define MULTI_CH_INPUT 0x4B3620DF
+#define INPUT_DVD 0x4B3631CE
+#define INPUT_TAPE 0x4BB610EF
+#define INPUT_TUNER 0x4BB6D02F
+#define INPUT_PHONO 0x4BB650AF
+#define INPUT_CD 0x4BB6906F
+#define INPUT_VIDEO1 0x4BB6F00F
+#define INPUT_VIDEO2 0x4BB6708F
+#define TUNER_GROUP 0x4BB652AD
+#define TUNER_PRSET_BACK 0x4BB6807F
+#define TUNER_PRSET_NEXT 0x4BB600FF
+#define CD_STOP 0x4BB638C7
+#define CD_PLAY 0x4BB6D827
+#define CD_DISC 0x4BB63AC5
+#define CD_PAUSE 0x4BB6F807
+#define CD_REW 0x4BB67887
+#define CD_FWD 0x4BB6B847
+#define DVD_STOP 0x4B36718E
+#define DVD_PLAY 0x4B36B14E
+#define DVD_REW 0x4B3649B6
+#define DVD_FWD 0x4B368976
+#define DVD_PREV 0x4B3609F6
+#define DVD_NEXT 0x4B36F10E
+#define TAPE_BACK 0x4BB66897
+#define TAPE_PLAY 0x4BB6A857
+#define TAPE_RECPAUSE 0x4BB618E7	// REC/Pause
+#define TAPE_STOP 0x4BB6C837
+#define TAPE_REW 0x4BB658A7
+#define TAPE_FWD 0x4BB69867
+#define CH_SEL 0x4B3622DD
+#define LEVEL_UP 0x4B3642BD
+#define LEVEL_DWN 0x4B36C23D
+#define TEST_TONE 0x4BB659A6
